@@ -32,21 +32,17 @@ public class AutoClickerMod {
         private static int count = 0;
         private static int jitterDellayMs = rand.nextInt(4);
         private static int jitterGroupSize = 3 + rand.nextInt(3);
-        private static double range = 3 + rand.nextDouble() * 3;
+        
 
 
-        Robot robot;
+
         @Mod.EventHandler
         public void init(FMLInitializationEvent event) {
             toggleKey = new KeyBinding("Toggle AutoClicker", Keyboard.KEY_F8, "AutoClicker");
             net.minecraftforge.fml.client.registry.ClientRegistry.registerKeyBinding(toggleKey);
             net.minecraftforge.common.MinecraftForge.EVENT_BUS.register(this);
             
-            try{
-                robot = new Robot();
-            }catch(AWTException e){
-                e.printStackTrace();
-            }
+
         }
 
         @SubscribeEvent
