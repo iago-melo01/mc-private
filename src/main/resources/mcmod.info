@@ -1,0 +1,16 @@
+[
+  {
+    "modid": "autoclicker",
+    "name": "MyMod",
+    "description": "Um mod pessoal",
+    "version": "1.3",
+    "mcversion": "1.8.9",
+    "url": "",
+    "updateUrl": "",
+    "authorList": ["Iago"],
+    "credits": "Feito por mim",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]

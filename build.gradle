@@ -1,0 +1,35 @@
+buildscript {
+    repositories {
+        jcenter()
+//        maven { url = "https://maven.minecraftforge.net" }
+         maven { url = "https://files.minecraftforge.net/maven"   }
+    }
+    dependencies {
+        //classpath 'net.minecraftforge.gradle:ForgeGradle:2.1-SNAPSHOT'
+
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.1-20210507.224146-40'
+    }
+}
+
+apply plugin: 'net.minecraftforge.gradle.forge'
+
+version = "1.3"
+group = "clickertest.application"
+archivesBaseName = "ClickerTest"
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+minecraft {
+    version = "1.8.9-11.15.1.2318-1.8.9"
+    runDir = "run"
+    mappings = "stable_22"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+}
