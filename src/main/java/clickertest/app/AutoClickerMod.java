@@ -32,7 +32,7 @@ public class AutoClickerMod {
         private static int count = 0;
         private static int jitterDellayMs = rand.nextInt(4);
         private static int jitterGroupSize = 3 + rand.nextInt(3);
-        
+
 
 
 
